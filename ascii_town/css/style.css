@@ -1,10 +1,5 @@
-@font-face {
-  font-family: "MaxiRoundEdu";
-  src: url("ABCMaxiRoundEdu-Regular.woff") format("woff");
-}
-
 * {
-	margin:  2px;
+	margin:  0px;
 	padding:  0px;
 	box-sizing: border-box;
 }
@@ -12,14 +7,13 @@
 /* adjusting fonts */
 
 body {
-	font-family: 'MaxiRoundEdu', Helvetica, sans-serif;
+	font-family: helvetica, sans-serif;
 	transition: background 500ms ease;
-	background-color: #fff3a1
 }
 
 p, li {
-	font-size:  18px;
-	line-height: 27px;
+	font-size:  15px;
+	line-height: 24px;
 }
 
 /* adjusting spacing */
@@ -33,29 +27,16 @@ h1, p {
 }
 
 h3 {
-	font-size: 25px;
-	margin-bottom:  21px;
+	margin-bottom:  15px;
 }
-
 
 ul, ol {
 	margin-left: 20px;
 }
 
 img {
-	height:  750px;
-	top: 182px;
-	left: 38px;
-	position: fixed;
-	z-index:-5;
-}
-a {
-	text-decoration: none;
-          color: #31E813;
-}
-
-a:hover {
-	color: white;
+	max-width: 100%;
+	height:  auto;
 }
 
 /* uncomment the code below to set the grid */
