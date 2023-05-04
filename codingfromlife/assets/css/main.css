@@ -1,0 +1,147 @@
+body {
+	background: #cccccc;
+}
+
+#align {
+	display: flex;
+  align-items: center;
+  justify-content: center;	
+  height: 100vh;
+}
+
+#stage {
+	width: 900px;
+	height: 556px;
+	margin: auto;
+	background: white;
+	position: relative;
+}
+
+#banana_shadow {
+	width: 184px;
+	height: 150px;
+	clip-path: polygon(15% 57%, 45% 48%, 69% 32%, 72% 40%, 78% 46%, 63% 56%, 51% 64%, 33% 70%, 16% 72%, 26% 62%);
+	background: #c9bd00;
+	bottom: 144px;
+	left: 363px;
+	position: absolute;
+}
+
+#banana_spot {
+	width: 150px;
+	height: 150px;
+	clip-path: polygon(33% 42%, 46% 37%, 59% 32%, 69% 22%, 71% 30%, 64% 36%, 64% 48%, 55% 42%, 43% 43%);
+	background: #40250a;
+	bottom: 135px;
+	left: 405px;
+	position: absolute;
+
+}
+
+#banana {
+	width: 200px;
+	height: 200px;
+	clip-path: polygon(10% 71%, 14% 79%, 23% 78%, 32% 80%, 54% 75%, 75% 70%, 84% 63%, 91% 53%, 93% 43%, 85% 35%, 75% 38%, 65% 43%, 48% 51%, 22% 58%, 17% 65%);
+	background: #ffef00;
+	bottom: 139px;
+	left: 349px;
+	position: absolute;
+}
+
+#book_cover_3 {
+	width: 181px;
+	height: 150px;
+	clip-path: polygon(8% 96%, 93% 96%, 100% 100%, 0% 100%);
+	background: #fadf74;
+	bottom: 200px;
+	left: 349px;
+	position: absolute;
+}
+
+#book_thick_3 {
+	width: 181px;
+	height: 23px;
+	background: #e3cd76;
+	bottom: 177px;
+	left: 349px;
+	position: absolute;
+}
+
+
+#book_cover_2 {
+	width: 250px;
+	height: 400px;
+	clip-path: polygon(8% 96%, 93% 96%, 100% 100%, 0% 100%);
+	background: yellow;
+	bottom: 170px;
+	left: 319px;
+	position: absolute;
+}
+
+#book_thick_2 {
+	width: 250px;
+	height: 50px;
+	background: beige;
+	bottom: 120px;
+	left: 320px;
+	position: absolute;
+}
+
+#book_cover_1 {
+	width: 300px;
+  height: 400px;
+	clip-path: polygon(8% 96%, 93% 96%, 100% 100%, 0% 100%);;
+	background: #49fb35
+        ;
+	bottom: 120px;
+	left: 270px;
+	position: absolute;
+}
+
+#book_thick_1 {
+	width: 300px;
+	height: 75px;
+	background: lightgrey
+        ;
+	bottom: 45px;
+	left: 270px;
+	position: absolute;
+
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+
+	/* uncomment for css transitions */
+	/* transition: all 400ms ease; */
+}
+
+/* animations */
+
+/*
+#clip:hover {
+	transform: rotate(1200deg);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+
+*/
