@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "MaxiRoundEdu";
+  src: url("ABCMaxiRoundEdu-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DiatypeEdu";
+  src: url("ABCDiatypeEdu-Regular.woff") format("woff");
+}
+* {
+	margin:  2px;
+	padding:  0px;
+	box-sizing: border-box;
+}
+
+/* adjusting fonts */
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: 'MaxiRoundEdu', Helvetica, sans-serif;
+	transition: background 500ms ease;
+	background-color: #fff3a1
+}
+
+p, li {
+	font-size:  18px;
+	line-height: 27px;
+}
+
+/* adjusting spacing */
+
+#left-column {
+	padding: 30px;
+}
+
+h1 {
+	font-size: 25px;
+	margin-bottom:  21px;
+}
+
+dl {
+	font-family: 'DiatypeEdu';
+	font-size: 14px;
+	line-height: 20px;
+	width: 700px;
+}
+
+ul, ol {
+	margin-left: 20px;
+}
+
+img {
+		height: 650px;
+		top: 152px;
+		left: 35px;
+		
+		z-index:-5;
+	}
+
+#mainstructure {
+width: 1200px;
+font-family: 'DiatypeEdu';
+font-size: 14px;
+line-height: 20px;
+margin: 0px;
+padding: 0px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+vertical-align: bottom;
+}
+
+#structure {
+	width: 770px;
+}
+
+#structure img {
+	display: block;
+	width: auto;
+	height: 400px;
+	top: 0px;
+	left: 0px;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+
+a {
+	display: block;
+	text-decoration: none;
+          color: #31E813;
+}
+
+a:hover {
+	color: white;
+}
+
+#structure {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr
+}
+
+
+/* uncomment the code below to set the grid */
+
+/*#grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+body {
+	overflow: hidden;
+}
+
+.scroll {
+	padding:  20px;
+	overflow: scroll;
+	height: 100vh;
+}
+
+#left-column {
+}
+
+#right-column {
+	background: #333;
+}*/
