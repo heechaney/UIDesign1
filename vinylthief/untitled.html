@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Spreadsheet Sample</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div class="grid-container" id="spreadsheet-data"></div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+    <script type="text/javascript">
+        var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRIiLm9geXNndkeROZcIFHxsQsz_-OdHbu8EfnSYyAIniA9iNcMAZc0braLQ74mN-cTIBzv8nXRLpWv/pub?output=csv';
+
+        function init() {
+            Papa.parse(public_spreadsheet_url, {
+                download: true,
+                header: true,
+                complete: showInfo
+            })
+        }
+
+        window.addEventListener('DOMContentLoaded', init)
+
+        function showInfo(results) {
+            var data = results.data
+            var dataLength = data.length
+            console.log(data);
+
+
+            for (var i = 0; i <dataLength; i++){
+
+           document.getElementById("spreadsheet-data").innerHTML += "<div class='grid-item" + (parseFloat(i) + 1) + "' id=" + "A-" +  (parseFloat(i) + 1) + ">" + "<div class = 'name'><h1>" + data[i].number + "</h1></div>" + "<div class = 'data'><p id='title'>" + data[i].title + "</p>" + "<p id='artist'>" + data[i].artist + "</p><p id='releasedyear'>"  + data[i].releasedyear + "</p><p id='acquiredyear'>" + data[i].acquiredyear + "</p><p id='acquiredplace'>" + data[i].acquiredplace + "</p><p id='media'>" + data[i].media + "</p><p id='genre'>" + data[i].genre + "</p><img src='" + data[i].coversrc + "'/></div></div>"
+            } 
+
+
+            for (var i = 0; i <dataLength; i++){
+                const el = document.getElementById(`A-${i+1}`);
+                const nameEl = el.querySelector('.name');
+                const dataEl = el.querySelector('.data');
+                dataEl.style.display = "none";
+
+                function onClick(event) {
+                    dataEl.style.display = "block";
+
+                }
+
+                nameEl.addEventListener("click",onClick);
+            }
+
+
+
+    }
+
+    </script>
+
+</body>
